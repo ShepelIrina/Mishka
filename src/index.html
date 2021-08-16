@@ -110,7 +110,7 @@
         <p class="description__text">Цена: <span>900</span>руб.</p>
         <div class="description__picture">
           <picture>
-            <source media="(min-width:1200px)" src="img/triple-set-desktop.jpg,
+            <source media="(min-width:1200px)" srcset="img/triple-set-desktop.jpg,
               img/triple-set-desktop2x.jpg">
             <source media="(min-width:768px)" srcset="img/triple-set-tablet.jpg,
               img/triple-set-tablet2x.jpg">
@@ -175,20 +175,49 @@
           <a href="#">@misssssiskras</a>
         </cite>
       </blockquote>
-      <button class="review__arrows">
-        <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
-        </svg>
-      </button>
-      <button class="review__arrows">
-        <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
-        </svg>
-      </button>
+      <div class="review__arrows arrows">
+        <button class="arrows__left">
+          <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
+          </svg>
+        </button>
+        <button class="arrows__right">
+          <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
+          </svg>
+        </button>
+      </div>
       <button class="review__button">
         Написать
       </button>
-
+    </section>
+    <section class="page-main__contacts contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <div class="contacts__address address">
+        <div class="address__mail">
+          <p class="address__text">
+            e-mail:
+          </p>
+          <a class="address__link" href="#">
+            info@mimimishkashop.ru
+          </a>
+        </div>
+        <div class="address__office">
+          <p class="address__text">
+            адрес
+          </p>
+          <p class="address__text">
+            г.Санкт-Петербург
+            ул.Большая конюшенная
+            д.19/8,офис 101
+          </p>
+        </div>
+      </div>
+      <picture>
+        <source media="(min-width:1200x)" src="img/map-desktop@1x.jpg,img/map-desktop@2x.jpg">
+        <source media="(min-width:768px)" srcset="img/map-tablet@1x.jpg,img/map-tablet@2x.jpg">
+        <img class="feedback__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" alt="карта проезда">
+      </picture>
     </section>
   </main>
 </body>

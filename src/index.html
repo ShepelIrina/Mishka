@@ -5,23 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mishka</title>
-  <link href="">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
   <header class="page-header">
     <picture >
       <source media="(min-width:1200px)" srcset="img/mishka-logo-desktop.svg">
       <source media="(min-width:768px)" srcset="img/mishka-logo-tablet.svg">
       <img class="page-header__logo"src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Mishka">
     </picture>
+    <button class="nav__menu">
+      <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
+        <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
+        <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
+        </svg>
+    </button>
     <nav class="page-header__nav nav">
-      <button class="nav__menu">
-        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
-          <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
-          <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
-          </svg>
-      </button>
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link">
@@ -65,15 +64,15 @@
   </header>
   <main class="page-main">
     <section class="page-main__promo promo">
-      <picture>
+      <!--<picture>
         <source media="(min-width:1200px)" srcset="img/hero-desktop.jpg 1x,
         img/hero-desktop2x.jpg 2x">
         <source media="(min-width:768px)" srcset="img/hero-tablet.jpg 1x,
         img/hero-tablet2x.jpg 2x">
         <img class="promo__img" src="img/hero-mobile@.jpg" srcset="img/hero-mobile@2x.jpg" alt="домик с вязанными мишками">
-      </picture>
+      </picture>-->
       <h1 class="promo__title">
-        Милые штуки ручной работы для дома
+        Милые штуки ручной работы&nbsp;для дома
       </h1>
       <div class="promo__menu menu">
         <a class="menu__link" href="#">
@@ -90,7 +89,7 @@
       <div class="product__description description">
         <p class="description__text">
           Экологически чистая пряжа,
-          ручная работа.Доступны в шести
+          ручная&nbsp;работа.Доступны в шести
           расцветках,и трех размерах.
         </p>
         <table class="description__table">
@@ -107,7 +106,6 @@
             <td class="description__cell">15 cм</td>
           </tr>
         </table>
-        <p class="description__text">Цена: <span>900</span>руб.</p>
         <div class="description__picture">
           <picture>
             <source media="(min-width:1200px)" srcset="img/triple-set-desktop.jpg,
@@ -117,6 +115,7 @@
             <img class="description__img" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile2x.jpg" alt="вязанные корзины">
           </picture>
         </div>
+        <p class="description__price">Цена: <span>900</span>руб.</p>
         <button class="description__button">Заказать</button>
       </div>
 
@@ -157,7 +156,7 @@
       </ul>
     </section>
     <section class="main-page__reviews reviews">
-      <img class="reviews__img" src="img/review.jpg" srcset="img/review2x.jpg" alt="кружево">
+      <!--<img class="reviews__img" src="img/review.jpg" srcset="img/review2x.jpg" alt="кружево">-->
       <h2 class="reviews__title">Отзывы</h2>
       <blockquote class="reviews__quote">
         <p class="reviews__text">
@@ -171,8 +170,8 @@
           более стильными,а также
           набирают больше лайков!
         </p>
-        <cite>Анастасия Красильникова
-          <a href="#">@misssssiskras</a>
+        <cite class="review__name">Анастасия Красильникова
+          <span class="review__nick">@misssssiskras</span>
         </cite>
       </blockquote>
       <div class="review__arrows arrows">
@@ -259,23 +258,23 @@
       </svg>
     </div>
   </footer>
-  <section class="page-modal">
-    <h2 class="page-modal__title">
+  <section class="modal">
+    <h2 class="modal__title">
       Добавить в корзину
     </h2>
-    <form class="page-modal__form form" action="" method="get">
+    <form class="modal__form form" action="" method="get">
       <h3 class="form__title">
         Выберите размер:
       </h3>
-      <label class="form__check check">
+      <label class="form__label check">
         <input class="check__input" type="checkbox" checked>
         <span class="check__box">S</span>
       </label>
-      <label class="form__check check">
+      <label class="form__label check">
         <input class="check__input" type="checkbox" >
         <span class="check__box">M</span>
       </label>
-      <label class="form__check check">
+      <label class="form__label check">
         <input class="check__input" type="checkbox" >
         <span class="check__box">L</span>
       </label>

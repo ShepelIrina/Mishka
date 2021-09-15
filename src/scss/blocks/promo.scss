@@ -1,0 +1,90 @@
+.promo {
+  background: url("../../img/hero-mobile@.jpg") no-repeat;
+  background-position: 0 -21px;
+  padding-top: 73px;
+
+  @media (min-width:$table-width) {
+    background: url("../../img/hero-tablet.jpg") no-repeat;
+    padding-top: 155px;
+    }
+}
+
+.promo__title {
+  margin: 0 auto;
+  width: 260px;
+  @include font (27px,30px,700);
+  margin-bottom: 120px;
+  text-align: center;
+  color: $color-basic-black;
+
+  @media (min-width:$table-width) {
+    width: 668px;
+    @include font (43px,50px,700);
+    margin-bottom: 372px;
+  }
+}
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (min-width:$table-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+}
+.promo__wrapper:after {
+  @media (min-width:$table-width) {
+    content: url(../../img/zigzag-white.svg);
+    position:absolute;
+    top: 100px;
+  }
+}
+
+.promo__link {
+  position: relative;
+  background-color: $color-light-mint;
+  padding: 24px 160px 31px 30px;
+  @include font(19px,24px,700);
+  color: $color-white;
+
+  @media (min-width:$table-width) {
+    padding: 25px 167px 34px 36px;
+    @include font (20px,30px,700);
+  }
+}
+.promo__link:last-child {
+  background-color: $color-basic-mint ;
+}
+.promo__link:first-child:after {
+  content: url("../../img/interior.svg");
+  position: absolute;
+  width: 42px;
+  height: 60px;
+  top: 23px;
+  right: 36px;
+
+  @media (min-width:$table-width) {
+    top:26px;
+  }
+}
+.promo__link:last-child:after {
+  content: url("../../img/toy.svg");
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 21px;
+  right: 27px;
+
+  @media (min-width:$table-width) {
+    top: 29px;
+  }
+}
+.promo__text {
+  @media (min-width:$table-width) {
+    margin: 0;
+    width: 131px;
+  }
+}

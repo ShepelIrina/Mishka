@@ -1,0 +1,36 @@
+.nav {
+  display: none;
+}
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__list:nth-child(3) {
+  display: none;
+}
+.nav__item {
+  @include font (17px,24px,700);
+  color: $color-basic-black;
+  border-bottom: 1px $color-light-grey solid;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.nav__list:first-child .nav__item {
+  padding-left: 76px;
+}
+.nav__list:nth-child(2) .nav__item {
+  padding-left: 30px;
+}
+.nav__icon {
+  margin-right: 23px;
+}
+.nav__icon:last-child {
+  margin-right: 20px;
+}
+.nav__text {
+  display: none;
+  @include font (15px,24px);
+  color: $color-dark-grey;
+}

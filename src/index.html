@@ -68,13 +68,7 @@
   </header>
   <main class="page-main">
     <section class="page-main__promo promo">
-      <!--<picture>
-        <source media="(min-width:1200px)" srcset="img/hero-desktop.jpg 1x,
-        img/hero-desktop2x.jpg 2x">
-        <source media="(min-width:768px)" srcset="img/hero-tablet.jpg 1x,
-        img/hero-tablet2x.jpg 2x">
-        <img class="promo__img" src="img/hero-mobile@.jpg" srcset="img/hero-mobile@2x.jpg" alt="домик с вязанными мишками">
-      </picture>-->
+
       <h1 class="promo__title">
         Милые штуки ручной работы&nbsp;для дома
       </h1>
@@ -88,28 +82,32 @@
       </div>
     </section>
     <section class="main-page__product product">
-      <h2 class="product__title">Вязанные корзинки</h2>
-      <h3 class="product__subtitle">Товар недели</h3>
+      <div class="product__wrapper">
+        <h2 class="product__title">Вязанные корзинки</h2>
+        <h3 class="product__subtitle">Товар недели</h3>
+      </div>
       <div class="product__description description">
-        <p class="description__text">
-          Экологически чистая пряжа,
-          ручная&nbsp;работа.Доступны в шести
-          расцветках,и трех размерах.
-        </p>
-        <table class="description__table">
-          <tr class="description__row">
-            <td class="description__cell">Цвет:</td>
-            <td class="description__cell">"Тиффани"/серый</td>
-          </tr>
-          <tr class="description__row">
-            <td class="description__cell">Диаметр:</td>
-            <td class="description__cell">25 см</td>
-          </tr>
-          <tr class="description__row">
-            <td class="description__cell">Высота:</td>
-            <td class="description__cell">15 cм</td>
-          </tr>
-        </table>
+        <div class=" description__wrapper">
+          <p class="description__text">
+            Экологически чистая пряжа,
+            ручная&nbsp;работа.Доступны в шести
+            расцветках,и трех размерах.
+          </p>
+          <table class="description__table">
+            <tr class="description__row">
+              <td class="description__cell">Цвет:</td>
+              <td class="description__cell">"Тиффани"/серый</td>
+            </tr>
+            <tr class="description__row">
+              <td class="description__cell">Диаметр:</td>
+              <td class="description__cell">25 см</td>
+            </tr>
+            <tr class="description__row">
+              <td class="description__cell">Высота:</td>
+              <td class="description__cell">15 cм</td>
+            </tr>
+          </table>
+        </div>
         <div class="description__picture">
           <picture>
             <source media="(min-width:1200px)" srcset="img/triple-set-desktop.jpg,
@@ -119,8 +117,10 @@
             <img class="description__img" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile2x.jpg" alt="вязанные корзины">
           </picture>
         </div>
-        <p class="description__price">Цена: <span>900</span>руб.</p>
-        <button class="description__button button">Заказать</button>
+        <div class="description__wrap">
+          <p class="description__price">Цена: <span>900</span>руб.</p>
+          <button class="description__button button">Заказать</button>
+        </div>
       </div>
     </section>
     <section class="page-main__information information">

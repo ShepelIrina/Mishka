@@ -83,8 +83,8 @@
   }
 }
 .promo__text {
+  margin: 0;
   @media (min-width:$table-width) {
-    margin: 0;
     width: 131px;
   }
 }

@@ -1,0 +1,54 @@
+.modal {
+  display: none;
+  padding: 34px 30px 47px 30px;
+  border-top: 1px $color-grey solid;
+  border-bottom: 1px $color-grey solid;
+  box-shadow: 0 5px 5px -5px;
+
+}
+.modal__title {
+  margin: 0;
+  @include font (25px,30px,700);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 17px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+
+}
+.form__title {
+  margin: 0;
+  @include font (15px,30px);
+  color: $color-dark-grey;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.form__check {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.check__box {
+  border: 2px $color-light-grey solid;
+  @include font (17px,16px,700);
+  color: $color-dark-grey;
+  padding: 15px 35px 15px 33px;
+}
+.check__input {
+  margin: 0;
+  appearance: none;
+}
+.check__input:checked+.check__box {
+  border: 2px $color-light-mint solid;
+}
+.form__button {
+  padding: 0;
+  @include font (17px,16px,700);
+  color: $color-white;
+  text-transform: uppercase;
+  padding: 18px 80px 18px 80px;
+  background-color: $color-light-mint ;
+  border: none;
+}

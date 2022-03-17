@@ -19,21 +19,8 @@ img {
   background-color:$color-white;
   border: 2px $color-dark-grey solid;
 }
-
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  padding: 22px 31px 0 0;
-  border-bottom: 1px $color-light-grey solid;
-}
-.menu__button {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: none;
-  margin-left: 67px;
-  margin-bottom: 22px;
-}
-.menu__logo {
-  margin-bottom: 19px;
+.main-page__wrap {
+  @media (min-width:$desctop-width) {
+    padding: 0 50px 0 50px;
+  }
 }

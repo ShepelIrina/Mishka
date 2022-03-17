@@ -1,12 +1,19 @@
 .information {
   background-image: url(../../img/zigzag-mobile.svg);
   background-repeat: no-repeat;
+  background-size: 100%;
   padding: 31px 30px 0 30px;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     background-image: url(../../img/zigzag-table.svg);
     background-repeat: no-repeat;
     padding: 55px 50px 83px 50px;
+  }
+
+  @media (min-width: $desctop-width) {
+    background-image: url(../../img/zigzag-desktop.svg);
+    background-repeat: no-repeat;
+    padding: 91px 0 90px 225px;
   }
 }
 .information__title {
@@ -15,9 +22,13 @@
   margin-bottom: 28px;
   color: $color-basic-black;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     @include font (43px,50px,700);
     margin-bottom: 41px;
+  }
+
+  @media (min-width:$desctop-width) {
+    @include font (53px,57px,700);
   }
 }
 .information__list {
@@ -25,7 +36,7 @@
   margin: 0;
   list-style: none;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
    display: grid;
    grid-template-columns: 265px 300px;
    column-gap: 70px;
@@ -38,20 +49,20 @@
   margin-bottom: 32px;
   color: $color-basic-black;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     @include font (20px,22px,700);
     margin: 0;
   }
 }
 
 .information__item:nth-child(2) {
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     grid-column:1;
     grid-row: 2;
   }
 }
 .information__item:nth-child(3) {
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     grid-column:1;
     grid-row: 3;
   }
@@ -59,7 +70,7 @@
 .information__img {
   margin-bottom: 16px;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     margin-bottom: 18px;
   }
 }
@@ -72,7 +83,7 @@
 .information__item:nth-child(4) .information__img {
   margin-bottom: 16px;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     margin-bottom: 18px;
   }
 }

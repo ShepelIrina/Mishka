@@ -1,0 +1,40 @@
+.arrows {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        position: absolute;
+        right: 50px;
+        bottom: 55px;
+    }
+  
+  }
+  .arrows__left {
+    padding: 0;
+    padding: 13px 42px 13px 38px;
+    background-color: $color-white ;
+    border: 1px $color-light-grey solid ;
+
+    @media (min-width: $tablet-width) {
+        padding: 0;
+        border: none;
+        padding-right: 37px;
+    }
+  }
+  .arrows__right {
+    padding: 0;
+    padding: 13px 42px 13px 38px;
+    background-color: $color-white ;
+    border: 1px $color-light-grey solid ;
+    border-left: none;
+
+    @media (min-width: $tablet-width) {
+        padding: 0;
+        border: none;
+    }
+  }
+ 
+  

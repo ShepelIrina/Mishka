@@ -1,0 +1,48 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 22px 0 0 0;
+    border-bottom: 1px $color-light-grey solid;
+
+    @media (min-width:$tablet-width) {
+        display: block;
+        padding: 22px 0 0 50px;
+    }
+    @media (min-width:$desctop-width) {
+        padding:0;
+        padding-top: 9px;
+        text-align: center;
+        
+    }
+  }
+  .menu__button {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    right: 33px;
+    top: 32px;
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+   
+  }
+
+.menu__close-icon {
+    display: none;
+}
+
+  .menu__logo {
+    margin-bottom: 19px;
+
+    @media (min-width:$tablet-width) {
+        margin-bottom: 17px;
+        
+    }
+    @media (min-width: $desctop-width) {
+        margin-bottom: 3px;
+    }
+}

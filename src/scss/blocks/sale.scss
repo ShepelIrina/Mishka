@@ -1,0 +1,19 @@
+
+.sale {
+    display: none;
+
+    @media (min-width: $desctop-width) {
+        display: block;
+        position: absolute;
+        display: flex;
+        top: 108px;
+        left: 50px;
+        @include font ( 15px,24px,700);
+        
+    }
+  }
+  .sale__item {
+      @media (min-width: $desctop-width) {
+          padding-right: 65px;
+      }
+  }

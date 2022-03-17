@@ -1,0 +1,62 @@
+.address {
+    margin-bottom: 65px;
+
+    @media (min-width:$tablet-width) {
+        padding: 0 50px 0 50px;
+        display: flex;
+        margin-bottom: 49px;
+    }
+
+    @media (min-width: $desctop-width) {
+        padding: 0;
+        grid-column: 1;
+        grid-row: 3/4;
+        flex-direction: column;
+       
+    }
+  }
+  .address__mail {
+    display: flex;
+    margin-bottom: 43px;
+
+    @media (min-width:$tablet-width) {
+        margin: 0;
+        margin-right: 53px;
+     }
+
+     @media (min-width:$desctop-width) {
+         margin: 0;
+         margin-bottom: 33px ;
+     }
+  }
+  .address__office {
+    display: flex;
+  }
+  .address__text {
+    margin: 0;
+    @include font (14px,30px);
+    color: $color-dark-grey ;
+
+    @media (min-width:$tablet-width) {
+        @include font (17px,30px,);
+
+    }
+  }
+  .address__text:not(:last-child) {
+    margin-right: 35px;
+
+    @media(min-width: $tablet-width) {
+        margin-right: 30px;
+    }
+  }
+  .address__link {
+    @include font (14px,30px);
+    color: $color-dark-grey ;
+    text-decoration: underline;
+    text-decoration-color: $color-basic-blue ;
+
+    @media (min-width: $tablet-width) {
+        @include font (17px,30px);
+    }
+  }
+ 

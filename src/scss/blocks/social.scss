@@ -1,0 +1,15 @@
+.social {
+    border-bottom: 1px $color-night-grey solid;
+    padding: 0 59px 27px 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width:$tablet-width) {
+        border: none;
+        padding: 0;
+    }
+  }
+  .social__link:not(:last-child) {
+    margin-right: 36px;
+  }

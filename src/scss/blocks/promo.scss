@@ -1,11 +1,21 @@
 .promo {
   background: url("../../img/hero-mobile@.jpg") no-repeat;
   background-position: 0 -21px;
+  background-size: 100% auto;
   padding-top: 73px;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     background: url("../../img/hero-tablet.jpg") no-repeat;
-    padding-top: 155px;
+    background-position: 0 -21px;
+    background-size: 100% auto;
+    padding: 155px 50px 0 50px;
+    }
+
+    @media (min-width:$desctop-width) {
+      background: url("../../img/hero-desktop.jpg") no-repeat;
+      background-position: 0 -30px;
+      background-size: 100% auto;
+      padding: 158px 50px 0 50px;
     }
 }
 
@@ -17,10 +27,14 @@
   text-align: center;
   color: $color-basic-black;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     width: 668px;
     @include font (43px,50px,700);
     margin-bottom: 372px;
+  }
+  @media (min-width:$desctop-width) {
+    @include font (53px,57px,700);
+    margin-bottom: 355px;
   }
 }
 .promo__wrapper {
@@ -28,7 +42,7 @@
   flex-direction: column;
   align-items: flex-end;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,21 +50,25 @@
   }
 }
 .promo__wrapper:after {
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     content: url(../../img/zigzag-white.svg);
     position:absolute;
     top: 100px;
+  }
+
+  @media (min-width:$desctop-width) {
+    content: url(../../img/zigzag-white-desktop.svg)
   }
 }
 
 .promo__link {
   position: relative;
   background-color: $color-light-mint;
-  padding: 24px 160px 31px 30px;
+  width: 100%;
   @include font(19px,24px,700);
   color: $color-white;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     padding: 25px 167px 34px 36px;
     @include font (20px,30px,700);
   }
@@ -66,7 +84,7 @@
   top: 23px;
   right: 36px;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     top:26px;
   }
 }
@@ -78,13 +96,17 @@
   top: 21px;
   right: 27px;
 
-  @media (min-width:$table-width) {
+  @media (min-width:$tablet-width) {
     top: 29px;
   }
 }
 .promo__text {
   margin: 0;
-  @media (min-width:$table-width) {
-    width: 131px;
+  width: 130px;
+  padding: 24px 0 31px 30px;
+
+  @media (min-width:$tablet-width) {
+    padding: 0;
   }
+ 
 }

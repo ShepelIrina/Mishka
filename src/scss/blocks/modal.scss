@@ -5,6 +5,13 @@
   border-bottom: 1px $color-grey solid;
   box-shadow: 0 5px 5px -5px;
 
+  @media (min-width:$tablet-width) {
+    width: 566px;
+    height: 336px;
+    padding: 54px 108px 46px 108px;
+    border: 1px $color-grey solid;
+  }
+
 }
 .modal__title {
   margin: 0;
@@ -12,6 +19,11 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 17px;
+
+  @media (min-width:$tablet-width) {
+    @include font (30px,57px,700);
+    margin-bottom: 35px;
+  }
 }
 .form {
   display: flex;
@@ -24,23 +36,40 @@
   color: $color-dark-grey;
   text-align: center;
   margin-bottom: 25px;
+
+  @media (min-width:$tablet-width) {
+    @include font (17px,30px);
+  }
 }
 .form__check {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 31px;
+
 }
+
 .check__box {
-  border: 2px $color-light-grey solid;
   @include font (17px,16px,700);
   color: $color-dark-grey;
-  padding: 15px 35px 15px 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  border: 2px $color-light-grey solid;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
+  
 }
 .check__input {
   margin: 0;
   appearance: none;
 }
-.check__input:checked+.check__box {
+.check__input:checked ~ .check__box {
   border: 2px $color-light-mint solid;
 }
 .form__button {
@@ -51,4 +80,8 @@
   padding: 18px 80px 18px 80px;
   background-color: $color-light-mint ;
   border: none;
+
+  @media (min-width:$tablet-width) {
+    padding: 20px 127px 20px 127px;
+  }
 }

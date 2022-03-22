@@ -15,6 +15,8 @@
     color: $color-basic-black;
     border-bottom: 1px $color-light-grey solid;
     padding: 28px 0 28px 76px;
+
+  
     
   
     @media (min-width:$tablet-width) {
@@ -33,6 +35,16 @@
     }
 }
 .catalog__link {
+    color: $color-basic-black;
+
+    &:hover,
+    &:focus {
+      color: $color-black-opacity;
+    }
+    &:active {
+        color: $color-black-opacity-light;
+    }
+    
     @media (min-width:$tablet-width) {
       @include font (15px,24px,700);
     }

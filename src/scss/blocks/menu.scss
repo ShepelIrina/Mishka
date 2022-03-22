@@ -38,6 +38,14 @@
   .menu__logo {
     margin-bottom: 19px;
 
+    &:hover,
+    &:focus {
+        opacity: 0.6;
+    }
+    &:active {
+        opacity: 0.3;
+    }
+
     @media (min-width:$tablet-width) {
         margin-bottom: 17px;
         

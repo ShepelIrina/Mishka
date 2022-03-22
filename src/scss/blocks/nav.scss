@@ -10,6 +10,14 @@
   @include font (15px,24px);
   color: $color-dark-grey;
 
+  &:hover,
+    &:focus {
+      color: $color-black-opacity;
+    }
+    &:active {
+        color: $color-black-opacity-light;
+    }
+
   @media (min-width:$tablet-width) {
     margin: 0;
     padding: 0;

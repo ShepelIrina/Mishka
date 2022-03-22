@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    fill: $color-social;
+
+    
 
     @media (min-width:$tablet-width) {
         border: none;
@@ -12,4 +15,34 @@
   }
   .social__link:not(:last-child) {
     margin-right: 36px;
+  }
+  .insta {
+    &:hover,
+    &:focus {
+        fill: $color-blue-light;
+    }
+
+    &:active {
+        fill: $color-blue-light-opacity;
+    }
+  }
+  .facebook {
+    &:hover,
+    &:focus {
+        fill: $color-blue-light;
+    }
+
+    &:active {
+        fill: $color-blue-light-opacity;
+    }
+  }
+  .twitter {
+    &:hover,
+    &:focus {
+        fill: $color-blue-light;
+    }
+
+    &:active {
+        fill: $color-blue-light-opacity;
+    }
   }

@@ -1,5 +1,6 @@
 .address {
     margin-bottom: 65px;
+    margin-left: 30px;
 
     @media (min-width:$tablet-width) {
         padding: 0 50px 0 50px;
@@ -54,6 +55,15 @@
     color: $color-dark-grey ;
     text-decoration: underline;
     text-decoration-color: $color-basic-blue ;
+
+    &:hover,
+    &:focus {
+        color: $color-blue-light;
+    }
+
+    &:active {
+        text-decoration-color: $color-blue-light-opacity-min;
+    }
 
     @media (min-width: $tablet-width) {
         @include font (17px,30px);

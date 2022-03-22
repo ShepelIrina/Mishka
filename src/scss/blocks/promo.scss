@@ -18,6 +18,18 @@
       padding: 158px 50px 0 50px;
     }
 }
+.promo:after {
+  @media (min-width:$tablet-width) {
+    content: url(../../img/zigzag-white.svg);
+    position:absolute;
+    width: 100%;
+    top: 100px;
+  }
+
+  @media (min-width:$desctop-width) {
+    content: url(../../img/zigzag-white-desktop.svg)
+  }
+}
 
 .promo__title {
   margin: 0 auto;
@@ -49,17 +61,8 @@
     position: relative;
   }
 }
-.promo__wrapper:after {
-  @media (min-width:$tablet-width) {
-    content: url(../../img/zigzag-white.svg);
-    position:absolute;
-    top: 100px;
-  }
 
-  @media (min-width:$desctop-width) {
-    content: url(../../img/zigzag-white-desktop.svg)
-  }
-}
+
 
 .promo__link {
   position: relative;
@@ -67,6 +70,11 @@
   width: 100%;
   @include font(19px,24px,700);
   color: $color-white;
+
+  &:hover,
+  &:focus {
+   transform: scaleY(1.09);
+  }
 
   @media (min-width:$tablet-width) {
     padding: 25px 167px 34px 36px;
@@ -76,25 +84,34 @@
 .promo__link:last-child {
   background-color: $color-basic-mint ;
 }
-.promo__link:first-child:after {
-  content: url("../../img/interior.svg");
+.promo__icon {
+  fill: $color-mint-opacity;
   position: absolute;
   width: 42px;
   height: 60px;
   top: 23px;
   right: 36px;
 
+  &:hover,
+  &:focus {
+    fill: $color-mint;
+  }
+
+  &:active {
+    fill: $color-mint-light-opacity;
+  }
+
   @media (min-width:$tablet-width) {
     top:26px;
   }
 }
-.promo__link:last-child:after {
-  content: url("../../img/toy.svg");
-  position: absolute;
+.promo__link:last-child .promo__icon {
   width: 60px;
   height: 60px;
   top: 21px;
   right: 27px;
+
+  
 
   @media (min-width:$tablet-width) {
     top: 29px;
@@ -104,6 +121,11 @@
   margin: 0;
   width: 130px;
   padding: 24px 0 31px 30px;
+
+  //&:hover,
+  //&:focus {
+   // transform: translateY(-5px) scale(1);
+  //}
 
   @media (min-width:$tablet-width) {
     padding: 0;

@@ -1,9 +1,11 @@
 .arrows {
+    fill: $color-basic-black;
     text-align: center;
     display: flex;
     justify-content: center;
     margin-bottom: 38px;
 
+   
     @media (min-width: $tablet-width) {
         margin: 0;
         position: absolute;
@@ -18,6 +20,15 @@
     background-color: $color-white ;
     border: 1px $color-light-grey solid ;
 
+    &:hover,
+    &:focus {
+        fill: $color-black-opacity;
+    }
+    
+    &:active {
+        fill: $color-black-opacity-light;
+    }
+
     @media (min-width: $tablet-width) {
         padding: 0;
         border: none;
@@ -30,6 +41,15 @@
     background-color: $color-white ;
     border: 1px $color-light-grey solid ;
     border-left: none;
+
+    &:hover,
+    &:focus {
+        fill: $color-black-opacity;
+    }
+    
+    &:active {
+        fill: $color-black-opacity-light;
+    }
 
     @media (min-width: $tablet-width) {
         padding: 0;

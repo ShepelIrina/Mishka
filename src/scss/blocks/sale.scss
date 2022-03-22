@@ -13,6 +13,15 @@
     }
   }
   .sale__item {
+
+    &:hover,
+    &:focus {
+      color: $color-black-opacity;
+    }
+    &:active {
+        color: $color-black-opacity-light;
+    }
+    
       @media (min-width: $desctop-width) {
           padding-right: 65px;
       }

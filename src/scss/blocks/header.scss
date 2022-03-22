@@ -18,6 +18,16 @@ img {
   color:$color-dark-grey;
   background-color:$color-white;
   border: 2px $color-dark-grey solid;
+
+  &:hover,
+  &:focus {
+    background-color: $color-dark-grey;
+    color: $color-white;
+  }
+
+  &:active {
+     color: $color-white-opacity;
+  }
 }
 .main-page__wrap {
   @media (min-width:$desctop-width) {

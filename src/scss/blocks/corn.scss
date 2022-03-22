@@ -11,6 +11,14 @@
     color: $color-basic-black;
     border-bottom: 1px $color-light-grey solid;
     padding: 28px 0 28px 30px;
+
+    &:hover,
+    &:focus {
+      color: $color-black-opacity;
+    }
+    &:active {
+        color: $color-black-opacity-light;
+    }
     
   
     @media (min-width:$tablet-width) {
@@ -43,6 +51,15 @@
 }
 .corn__icon {
     margin-right: 23px;
+    fill: $color-black-opacity-min;
+
+    &:hover,
+    &:focus {
+        fill: $color-light-mint;
+    }
+    &:active {
+        fill: $color-light-mint-opacity;
+    }
   }
   
   .corn__icon:last-child {

@@ -14,5 +14,18 @@
 
     @media (min-width:$tablet-width) {
         margin-right: 27px;
+        
     }
+  }
+  .copyright__icon {
+      fill: $color-light-mint;
+
+      &:hover,
+      &:focus {
+          fill: $color-blue-light;
+      }
+
+      &:active {
+          fill: $color-blue-light-opacity;
+      }
   }

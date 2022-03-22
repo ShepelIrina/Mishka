@@ -13,6 +13,16 @@
 
   @media (min-width:$tablet-width) {
     display: block;
+    fill: $color-basic-black;
+
+    &:hover,
+    &:focus {
+      fill: $color-blue-light;
+    }
+
+    &:active {
+      fill: $color-blue-light-opacity;
+    }
   }
 }
 

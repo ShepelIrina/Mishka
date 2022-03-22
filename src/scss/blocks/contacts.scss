@@ -2,7 +2,7 @@
     background-image: url(../../img/zigzag-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 38px 30px 39px 29px;
+    padding: 38px 0 39px 0;
     display: flex;
     flex-direction: column;
 
@@ -30,9 +30,11 @@
   .contacts__title {
     margin: 0;
     @include font (18px,30px,700);
+    margin-left: 30px;
     margin-bottom: 28px;
 
     @media (min-width:$tablet-width) {
+        margin: 0;
         @include font (43px,50px,700);
         margin-bottom: 49px;
         padding-left: 50px;
@@ -85,11 +87,12 @@
   }
   .contacts__button {
     padding: 16px 52px 16px 53px;
+    align-self: center;
 
     @media (min-width:$tablet-width) {
         padding: 16px 36px 16px 36px;
         margin-bottom: 57px;
-        align-self: center;
+       
     }
 
     @media (min-width:$desctop-width) {

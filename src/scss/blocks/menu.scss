@@ -6,7 +6,6 @@
     border-bottom: 1px $color-light-grey solid;
 
     @media (min-width:$tablet-width) {
-        display: block;
         padding: 22px 0 0 50px;
     }
     @media (min-width:$desctop-width) {
@@ -34,9 +33,25 @@
 .menu__close-icon {
     display: none;
 }
+.menu-logo__wrap {
+    width: 86px;
+    height: 35px;
+    margin-bottom: 22px;
 
+    @media (min-width: $tablet-width) {
+        width: 113px;
+        height: 46px;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $desctop-width) {
+        width: 149px;
+        height: 72px;
+        margin-bottom: 7px;
+    }
+}
   .menu__logo {
-    margin-bottom: 19px;
+    
 
     &:hover,
     &:focus {
@@ -46,11 +61,5 @@
         opacity: 0.3;
     }
 
-    @media (min-width:$tablet-width) {
-        margin-bottom: 17px;
-        
-    }
-    @media (min-width: $desctop-width) {
-        margin-bottom: 3px;
-    }
+   
 }

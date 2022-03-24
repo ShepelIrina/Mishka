@@ -1,0 +1,31 @@
+.card {
+    border: 1px solid $color-light-grey;
+    margin-bottom: 30px;
+}
+.card__discription {
+    padding: 27px 32px 0 28px;
+}
+.card__title {
+    margin: 0;
+    @include font (17px,24px,700);
+    margin-bottom: 6px;
+}
+.card__text {
+    margin: 0;
+    @include font (13px,30px);
+    color: $color-dark-grey;
+    margin-bottom: 18px;
+}
+.card__wrapper {
+    border-top: 1px solid $color-light-grey;
+    padding-top: 23px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+.card__price {
+    @include font (15px,24px,700);
+}
+.card__icon {
+    fill: $color-black-opacity-min;
+}

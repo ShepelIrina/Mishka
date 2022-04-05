@@ -1,9 +1,13 @@
 .modal {
-  display: none;
+  //display: none;
   padding: 34px 30px 47px 30px;
   border-top: 1px $color-grey solid;
   border-bottom: 1px $color-grey solid;
   box-shadow: 0 5px 5px -5px;
+  position: absolute;
+  top: calc(50% - 165px);
+  background-color: #fff;
+  z-index: 10;
 
   @media (min-width:$tablet-width) {
     width: 566px;

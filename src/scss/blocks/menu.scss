@@ -7,8 +7,10 @@
 
     @media (min-width:$tablet-width) {
         padding: 22px 0 0 50px;
+        display: block;
     }
     @media (min-width:$desctop-width) {
+        display: flex;
         padding:0;
         padding-top: 9px;
         text-align: center;
@@ -51,8 +53,6 @@
     }
 }
   .menu__logo {
-    
-
     &:hover,
     &:focus {
         opacity: 0.6;

@@ -25,13 +25,3 @@ $color-social: #231F20;
 $mobil-width:320px;
 $tablet-width:768px;
 $desctop-width:1200px;
-.hide {
-    display: none;
-
-    @media (min-width:$tablet-width) {
-        display: block;
-    }
-}
-.show {
-    display: block;
-}

@@ -1,20 +1,51 @@
 .catalogue-promo {
     height: 177px;
     background-color: $color-basic-grey;
-   
+
+    @media (min-width: $tablet-width) {
+        height: 226px;
+        background-image: url(../../img/zigzag-white.svg);
+        background-repeat: no-repeat;
+        background-position: 0 205px ;
+    }
+    @media (min-width: $desctop-width) {
+        height: 271px;
+        background-image: url(../../img/zigzag-white-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 0 238px ;
+    }
 }
 .catalogue-promo__title {
     margin: 0;
     padding-top: 74px;
     text-align: center;
     @include font (27px,30px,700);
+
+    @media (min-width: $tablet-width) {
+        @include font (43px,50px,700);
+        padding-top: 100px;
+    }
+
+    @media (min-width: $desctop-width) {
+        @include font (53px,57px,700);
+        padding-top: 102px;
+    }
 }
 .catalogue-content {
     padding: 30px 30px 0 30px;
+
+    @media (min-width: $tablet-width) {
+        padding: 79px 50px 0 50px;
+    }
+
+    @media (min-width: $desctop-width) {
+        padding: 111px 75px 0 75px;
+    }
 }
-.catalogue-video {
-    margin: 0 30px 58px 30px;
-   padding-top: 21px;
-    position:relative;
-    border: 1px solid $color-light-grey;
+.content__wrapper {
+    @media (min-width: $desctop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 52px;
+    }
 }

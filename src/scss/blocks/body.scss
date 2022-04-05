@@ -1,0 +1,46 @@
+body {
+    margin: 0 auto;
+    font-family: 'Open Sans', Arial, sans-serif;
+    position:relative;
+  
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    width: 100%;
+  }
+  .button {
+    margin: 0;
+    padding: 0;
+    @include font (18px,20px,700);
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    color:$color-dark-grey;
+    background-color:$color-white;
+    border: 2px $color-dark-grey solid;
+  
+  
+    &:hover,
+    &:focus {
+      background-color: $color-dark-grey;
+      color: $color-white;
+    }
+    &:active {
+        color: $color-white-opacity;
+     }
+   }
+   
+   .main-page__wrap {
+     @media (min-width:$desctop-width) {
+       padding: 0 50px 0 50px;
+     }
+   }
+   .hide {
+    display: none;
+
+
+   }
+.show {
+    display: block;
+}

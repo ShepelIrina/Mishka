@@ -1,0 +1,81 @@
+.phone {
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        padding: 50px 50px 0 50px;
+        background-color: $color-basic-grey;
+        display: grid;
+        grid-template-columns: 167px 1fr;
+    }
+
+    @media (min-width: $desctop-width) {
+        padding: 50px 225px 0 97px;
+        grid-template-columns: 128px 1fr;
+    }
+}
+.form__title-phone {
+    @media (min-width: $tablet-width) {
+        padding-top: 14px;
+    }
+}
+.phone__input {
+    border: none;
+    border-bottom: 2px solid $color-basic-black;
+    padding-bottom: 20px;
+
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid $color-basic-blue;
+    }
+    &:active {
+        outline: none;
+        border-bottom: 2px solid $color-basic-blue;
+        color: $color-dark-grey;
+        @include font (19px,18px);
+    }
+
+    @media (min-width: $tablet-width) {
+        padding: 14px 0 20px 17px;
+        background-color: $color-basic-grey;
+    }
+
+    
+    
+}
+.phone__input::placeholder {
+    @include font (17px,18px);
+    color: $color-black-opacity-light;
+
+    @media (min-width: $tablet-width) {
+        @include font (19px,18px);
+    }
+}
+.phone__icon {
+    position: absolute;
+    top: 27px;
+    right: 7px;
+    fill: $color-black-opacity-light;
+
+    &:hover,
+    &:focus {
+        fill: $color-basic-blue;
+    }
+
+    &:active {
+        fill: $color-basic-blue;
+    }
+
+    @media (min-width: $tablet-width) {
+        top: 60px;
+        right: 72px;
+    }
+
+    @media (min-width: $desctop-width) {
+        top: 65px;
+        right: 233px;
+    }
+}

@@ -1,0 +1,49 @@
+.wishes {
+    margin-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+        padding: 50px 50px 0 50px;
+        margin-bottom: 53px;
+        display: grid;
+        grid-template-columns: 167px 1fr;
+    }
+
+    @media (min-width: $desctop-width) {
+        padding: 50px 225px 0 97px;
+        grid-template-columns: 128px 1fr;
+        margin-bottom: 49px;
+    }
+}
+.wishes__field {
+    padding: 0;
+    margin-top: 4px;
+    border: 2px solid $color-dark-grey;
+    width: 100%;
+
+    &:hover,
+    &:focus {
+        border: 2px solid $color-basic-blue;
+    }
+    &:active {
+        border: 2px solid $color-basic-blue;
+        color: $color-dark-grey;
+        @include font (19px,18px);
+    }
+
+    @media (min-width: $tablet-width) {
+        margin: 0;
+    }
+    
+    
+}
+.wishes__field::placeholder {
+    @include font (17px,18px);
+    color: $color-black-opacity-light;
+    width: 226px;
+    padding: 17px 0 0 17px;
+
+    @media (min-width: $tablet-width) {
+        @include font (19px,18px);
+        width: 470px;
+    }
+}

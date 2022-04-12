@@ -29,12 +29,12 @@
     margin-bottom: 35px;
   }
 }
-.form {
+.size {
   display: flex;
   flex-direction: column;
 
 }
-.form__title {
+.size__title {
   margin: 0;
   @include font (15px,30px);
   color: $color-dark-grey;
@@ -45,7 +45,7 @@
     @include font (17px,30px);
   }
 }
-.form__check {
+.size__check {
   display: flex;
   justify-content: center;
   gap: 7px;
@@ -76,7 +76,7 @@
 .check__input:checked ~ .check__box {
   border: 2px $color-light-mint solid;
 }
-.form__button {
+.size__button {
   padding: 0;
   @include font (17px,16px,700);
   color: $color-white;

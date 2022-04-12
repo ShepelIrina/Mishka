@@ -1,0 +1,78 @@
+.mail {
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        padding: 24px 50px 50px 50px;
+        background-color: $color-basic-grey;
+        display: grid;
+        grid-template-columns: 167px 1fr;
+    }
+
+    @media (min-width: $desctop-width) {
+        padding: 39px 225px 50px 97px;
+        grid-template-columns: 128px 1fr;
+    }
+}
+.form__title-mail {
+    @media (min-width: $tablet-width) {
+        margin: 0;
+        padding-top: 15px;
+    }
+}
+.mail__input {
+    border: none;
+    border-bottom: 2px solid $color-basic-black;
+    padding: 2px 0 18px 0;
+
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid $color-basic-blue;
+    }
+    &:active {
+     outline: none;
+        border-bottom: 2px solid $color-basic-blue;
+        color: $color-dark-grey;
+        @include font (19px,18px);
+    }
+
+    @media (min-width: $tablet-width) {
+        padding: 15px 0 19px 18px;
+        background-color: $color-basic-grey;
+    }
+}
+.mail__input::placeholder {
+    @include font (17px,18px);
+    color: $color-black-opacity-light;
+
+    @media (min-width: $tablet-width) {
+        @include font (19px,18px);
+    }
+}
+.mail__icon {
+    position: absolute;
+    top: 32px;
+    right: 2px;
+    fill: $color-black-opacity-light;
+
+    &:hover,
+    &:focus {
+        fill: $color-basic-blue;
+    }
+
+    &:active {
+        fill: $color-basic-blue;
+    }
+
+    @media (min-width:$tablet-width) {
+        top: 40px;
+        right: 72px;
+    }
+
+    @media (min-width: $desctop-width) {
+        right: 233px;
+    }
+}

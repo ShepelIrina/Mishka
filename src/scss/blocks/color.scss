@@ -1,0 +1,79 @@
+.color {
+    @media (min-width: $tablet-width) {
+        background-color: $color-basic-grey;
+        padding: 66px 50px 9px 50px;
+        display: grid;
+        grid-template-columns: 167px 1fr;
+    }
+
+    @media (min-width: $desctop-width) {
+        padding: 68px 0 10px 97px;
+        grid-template-columns: 128px 1fr;
+    }
+}
+.color__wrapper {
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 262px 262px;
+    }
+
+    @media (min-width: $desctop-width) {
+        grid-template-columns: 262px 262px 262px;
+    }
+}
+.color__label {
+    @include font (17px,18px,700);
+    margin-bottom: 43px;
+    position: relative;
+    padding-left: 61px;
+
+    @media (min-width: $tablet-width) {
+        @include font (19px,18px,700);
+        margin-bottom: 60px;
+        padding-left: 82px;
+    }
+
+    @media (min-width: $desctop-width) {
+        margin-bottom: 57px;
+    }
+    
+}
+
+.color__input {
+    margin: 0;
+    appearance: none;
+    position: absolute;
+    
+}
+.color__box {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border: 2px solid $color-dark-grey;
+    left: 0;
+    top: -14px;
+
+    &:hover,
+    &:focus {
+        border: 2px solid $color-basic-blue;
+    }
+    &:active {
+        border: 2px solid $color-black-opacity-light;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 52px;
+        height: 52px;
+        top: -20px;
+    }
+}
+.color__input:checked + .color__box {
+    background-image: url(../../img/Checkbox/Tick.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}

@@ -1,20 +1,20 @@
 .mail {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
     display: flex;
     flex-direction: column;
     position: relative;
 
     @media (min-width: $tablet-width) {
         margin: 0;
-        padding: 24px 50px 50px 50px;
+        padding: 28px 50px 50px 50px;
         background-color: $color-basic-grey;
         display: grid;
         grid-template-columns: 167px 1fr;
     }
 
     @media (min-width: $desctop-width) {
-        padding: 39px 225px 50px 97px;
-        grid-template-columns: 128px 1fr;
+        padding: 28px 248px 50px 140px;
+        grid-template-columns: 113px 1fr;
     }
 }
 .form__title-mail {
@@ -26,7 +26,7 @@
 .mail__input {
     border: none;
     border-bottom: 2px solid $color-basic-black;
-    padding: 2px 0 18px 0;
+    padding: 5px 0 15px 0;
 
     &:hover,
     &:focus {
@@ -40,7 +40,7 @@
     }
 
     @media (min-width: $tablet-width) {
-        padding: 15px 0 19px 18px;
+        padding: 15px 0 16px 18px;
         background-color: $color-basic-grey;
     }
 }
@@ -54,7 +54,7 @@
 }
 .mail__icon {
     position: absolute;
-    top: 32px;
+    top: 35px;
     right: 2px;
     fill: $color-black-opacity-light;
 
@@ -73,6 +73,6 @@
     }
 
     @media (min-width: $desctop-width) {
-        right: 233px;
+        right: 250px;
     }
 }

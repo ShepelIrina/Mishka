@@ -1,18 +1,18 @@
 .color {
     @media (min-width: $tablet-width) {
         background-color: $color-basic-grey;
-        padding: 66px 50px 9px 50px;
+        padding: 68px 50px 8px 50px;
         display: grid;
         grid-template-columns: 167px 1fr;
     }
 
     @media (min-width: $desctop-width) {
-        padding: 68px 0 10px 97px;
-        grid-template-columns: 128px 1fr;
+        padding: 70px 0 8px 140px;
+        grid-template-columns: 113px 1fr;
     }
 }
 .color__wrapper {
-    padding-top: 18px;
+    padding-top: 16px;
     display: flex;
     flex-direction: column;
 
@@ -34,12 +34,13 @@
 
     @media (min-width: $tablet-width) {
         @include font (19px,18px,700);
-        margin-bottom: 60px;
+        margin-bottom: 58px;
         padding-left: 82px;
     }
 
     @media (min-width: $desctop-width) {
         margin-bottom: 57px;
+        
     }
     
 }
@@ -52,11 +53,11 @@
 }
 .color__box {
     position: absolute;
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: 34px;
     border: 2px solid $color-dark-grey;
     left: 0;
-    top: -14px;
+    top: -12px;
 
     &:hover,
     &:focus {
@@ -67,13 +68,17 @@
     }
 
     @media (min-width: $tablet-width) {
-        width: 52px;
-        height: 52px;
-        top: -20px;
+        width: 48px;
+        height: 48px;
+        top: -18px;
+    }
+    @media (min-width: $desctop-width) {
+        top: -22px;
+        
     }
 }
 .color__input:checked + .color__box {
     background-image: url(../../img/Checkbox/Tick.svg);
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 46% 58%;
 }

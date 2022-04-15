@@ -1,6 +1,6 @@
 .social {
     border-bottom: 1px $color-night-grey solid;
-    padding: 0 59px 27px 59px;
+    padding: 0 59px 23px 59px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,10 +13,9 @@
         padding: 0;
     }
   }
-  .social__link:not(:last-child) {
-    margin-right: 36px;
-  }
+  
   .insta {
+      margin-right: 39px;
     &:hover,
     &:focus {
         fill: $color-blue-light;
@@ -27,6 +26,7 @@
     }
   }
   .facebook {
+      margin-right: 41px;
     &:hover,
     &:focus {
         fill: $color-blue-light;

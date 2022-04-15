@@ -4,7 +4,6 @@ const closeButton = document.querySelector('.form__button');
 const cornIcon = document.querySelector('.corn__icon');
 
 for (const cardIcon of cardIcons) {
-   
 cardIcon.addEventListener('click', function(evt) {
         modalWindow.classList.add('show');
         modalWindow.classList.remove('hide');

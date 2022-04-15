@@ -3,14 +3,19 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 38px;
+    margin-bottom: 33px;
 
    
     @media (min-width: $tablet-width) {
         margin: 0;
         position: absolute;
-        right: 50px;
-        bottom: 55px;
+        right: 68px;
+        bottom: 57px;
+    }
+
+    @media (min-width: $desctop-width) {
+        right: 18px;
+        bottom: 127px;
     }
   
   }

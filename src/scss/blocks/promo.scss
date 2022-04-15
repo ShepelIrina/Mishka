@@ -3,33 +3,23 @@
   background-position: 0 -21px;
   background-size: 100% auto;
   padding-top: 73px;
+  
 
   @media (min-width:$tablet-width) {
     background: url("../../img/hero-tablet.jpg") no-repeat;
-    background-position: 0 -21px;
+    background-position: 0 ;
     background-size: 100% auto;
     padding: 155px 50px 0 50px;
     }
 
     @media (min-width:$desctop-width) {
       background: url("../../img/hero-desktop.jpg") no-repeat;
-      background-position: 0 -30px;
+      background-position: 0 -23px;
       background-size: 100% auto;
-      padding: 158px 50px 0 50px;
+      padding: 159px 73px 0 78px;
     }
 }
-.promo:after {
-  @media (min-width:$tablet-width) {
-    content: url(../../img/zigzag-white.svg);
-    position:absolute;
-    width: 100%;
-    top: 100px;
-  }
 
-  @media (min-width:$desctop-width) {
-    content: url(../../img/zigzag-white-desktop.svg)
-  }
-}
 
 .promo__title {
   margin: 0 auto;
@@ -42,11 +32,11 @@
   @media (min-width:$tablet-width) {
     width: 668px;
     @include font (43px,50px,700);
-    margin-bottom: 372px;
+    margin-bottom: 371px;
   }
   @media (min-width:$desctop-width) {
-    @include font (53px,57px,700);
-    margin-bottom: 355px;
+    @include font (54px,57px,700);
+    margin-bottom: 353px;
   }
 }
 .promo__wrapper {
@@ -77,7 +67,7 @@
   }
 
   @media (min-width:$tablet-width) {
-    padding: 25px 167px 34px 36px;
+    padding: 26px 167px 34px 36px;
     @include font (20px,30px,700);
   }
 }
@@ -90,7 +80,7 @@
   width: 42px;
   height: 60px;
   top: 23px;
-  right: 36px;
+  right: 35px;
 
   &:hover,
   &:focus {
@@ -102,7 +92,7 @@
   }
 
   @media (min-width:$tablet-width) {
-    top:26px;
+    top: 31px;
   }
 }
 .promo__link:last-child .promo__icon {
@@ -111,10 +101,9 @@
   top: 21px;
   right: 27px;
 
-  
-
   @media (min-width:$tablet-width) {
-    top: 29px;
+    top: 31px;
+    right: 33px;
   }
 }
 .promo__text {
@@ -122,13 +111,24 @@
   width: 130px;
   padding: 24px 0 31px 30px;
 
-  //&:hover,
-  //&:focus {
-   // transform: translateY(-5px) scale(1);
-  //}
+  
 
   @media (min-width:$tablet-width) {
     padding: 0;
   }
  
+}
+.promo__img {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 821px;
+    left: 0;
+  }
+
+  @media (min-width: $desctop-width) {
+    top: 816px;
+  }
 }

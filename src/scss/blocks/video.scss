@@ -1,5 +1,5 @@
 .video {
-   padding-top: 21px;
+   padding-top: 23px;
     position:relative;
     border: 1px solid $color-light-grey;
     display: flex;
@@ -33,26 +33,26 @@
     margin: 0;
     @include font (17px,24px,700);
     padding-left: 91px;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
     position: relative;
 
     @media (min-width: $tablet-width) {
         @include font (20px,24px,700);
         padding-left: 107px;
-        margin-bottom: 24px;
+        margin-bottom: 25px;
     }
 
     @media (min-width: $desctop-width) {
        padding: 0;
        padding-top: 96px;
-       margin-bottom: 27px;
+       margin-bottom: 0;
        width: 178px;
     }
 }
 .video__title:before {
     content: url(../../img/video.svg);
     position: absolute;
-    top: 15px;
+    top: 12px;
     left: 34px;
 
     @media (min-width: $tablet-width) {
@@ -66,16 +66,18 @@
     }
 }
 .video__wrap {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     position:relative;
 
 
     @media (min-width: $tablet-width) {
         grid-column: 1;
         grid-row: 1/2;
+        margin-bottom: 36px;
     }
 
     @media (min-width: $desctop-width) {
+        height: 453px;
         grid-row: 1/4;
         margin: 0;
     }
@@ -106,16 +108,17 @@
         @include font(15px,30px);
         padding-left: 40px;
         padding-right: 17px;
+        margin-bottom: 40px;
     }
 
     @media (min-width: $desctop-width) {
         padding: 0;
-        margin-bottom: 51px;
+        margin: 0;
         width: 252px;
     }
 }
 .video__button {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
     @include font (18px,16px,700);
     padding: 16px 19px 16px 19px;
     align-self: center;
@@ -126,12 +129,12 @@
     }
 
     @media (min-width: $desctop-width) {
-        margin: 0 57px 60px 0;
+        margin: 0 57px 43px 0;
     }
 }
 
 .video__img {
     @media (min-width: $desctop-width) {
-        height: 100%;
+        height: 453px;
     }
 }

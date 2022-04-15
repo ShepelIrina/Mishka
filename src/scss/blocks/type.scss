@@ -9,13 +9,13 @@
     }
     
     @media (min-width: $desctop-width) {
-        padding-left: 97px;
-        grid-template-columns: 128px 1fr;
+        padding-left: 140px;
+        grid-template-columns: 113px 1fr;
         margin-bottom: 7px;
     }
 }
 .type__wrapper {
-    padding-top: 18px;
+    padding-top: 17px;
     display: flex;
     flex-direction: column;
 
@@ -33,14 +33,19 @@
     @media (min-width: $tablet-width) {
         @include font (19px,18px,700);
         width: 100%;
-        padding-left: 78px;
+        padding-left: 80px;
         margin-bottom: 58px;
     }
 
     @media (min-width: $desctop-width) {
-        padding-left: 80px;
+        margin-bottom: 56px;
     }
     
+}
+.type__label:last-child {
+    @media (min-width: $tablet-width) {
+        margin-bottom: 57px;
+    }
 }
 .type__input {
     margin: 0;
@@ -51,12 +56,12 @@
 }
 .type__box {
     position: absolute;
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     border: 2px solid $color-dark-grey;
     border-radius: 50%;
-    left: -2px;
-    top: -8px;
+    left: -1px;
+    top: -7px;
 
     &:hover,
     &:focus {
@@ -67,33 +72,38 @@
     }
 
     @media (min-width: $tablet-width) {
-        width: 52px;
-        height: 52px;
-        top: -20px;
+        width: 46px;
+        height: 46px;
+        top: -18px;
+        left: 3px;
+    }
+    @media (min-width: $desctop-width) {
+        top: -19px;
+        left: 1px;
     }
 }
 .type__label:last-child .type__box {
     top: -13px;
 
     @media (min-width: $tablet-width) {
-        top: -20px;
+        top: -18px;
     }
 }
 .type__input:checked + .type__box::before {
     content:"";
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     background-color: $color-basic-blue;
     border-radius: 50%;
     position: absolute;
-    left: 12px;
-    top: 12px;
+    left: 11px;
+    top: 11px;
 
     @media (min-width: $tablet-width) {
-        width: 23px;
-        height: 23px;
-        left: 15px;
-        top: 15px;
+        width: 20px;
+        height: 20px;
+        left: 13px;
+        top: 13px;
     }
 
 }

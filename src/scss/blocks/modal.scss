@@ -5,7 +5,7 @@
   border-bottom: 1px $color-grey solid;
   box-shadow: 0 5px 5px -5px;
   position: absolute;
-  top: calc(50% - 165px);
+  top: calc(50% - 163px);
   background-color: #fff;
   z-index: 10;
 
@@ -14,6 +14,9 @@
     height: 336px;
     padding: 54px 108px 46px 108px;
     border: 1px $color-grey solid;
+    left: 20%;
+    
+    
   }
 
 }
@@ -23,6 +26,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 17px;
+  
 
   @media (min-width:$tablet-width) {
     @include font (30px,57px,700);
@@ -63,6 +67,15 @@
   height: 52px;
   border: 2px $color-light-grey solid;
   box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $color-dark-grey-opacity;
+  }
+
+  &:active {
+    border: 2px solid $color-light-mint;
+  }
 
   @media (min-width: $tablet-width) {
     width: 112px;

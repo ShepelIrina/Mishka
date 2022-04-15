@@ -1,5 +1,5 @@
 .phone {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -13,19 +13,19 @@
     }
 
     @media (min-width: $desctop-width) {
-        padding: 50px 225px 0 97px;
-        grid-template-columns: 128px 1fr;
+        padding: 50px 248px 0 140px;
+        grid-template-columns: 113px 1fr;
     }
 }
 .form__title-phone {
     @media (min-width: $tablet-width) {
-        padding-top: 14px;
+        padding-top: 17px;
     }
 }
 .phone__input {
     border: none;
     border-bottom: 2px solid $color-basic-black;
-    padding-bottom: 20px;
+    padding: 3px 0 17px 0;
 
     &:hover,
     &:focus {
@@ -39,7 +39,7 @@
     }
 
     @media (min-width: $tablet-width) {
-        padding: 14px 0 20px 17px;
+        padding: 17px 0 18px 17px;
         background-color: $color-basic-grey;
     }
 
@@ -56,7 +56,7 @@
 }
 .phone__icon {
     position: absolute;
-    top: 27px;
+    top: 30px;
     right: 7px;
     fill: $color-black-opacity-light;
 
@@ -71,11 +71,11 @@
 
     @media (min-width: $tablet-width) {
         top: 60px;
-        right: 72px;
+        right: 76px;
     }
 
     @media (min-width: $desctop-width) {
-        top: 65px;
-        right: 233px;
+        top: 60px;
+        right: 255px;
     }
 }

@@ -2,7 +2,7 @@
     background-image: url(../../img/zigzag-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 38px 0 39px 0;
+    padding: 45px 0 39px 0;
     display: flex;
     flex-direction: column;
 
@@ -11,7 +11,7 @@
         background-repeat: no-repeat;
         background-size: 100%;
         padding: 0;
-        padding-top: 68px;
+        padding-top: 88px;
         position: relative;
         
     }
@@ -20,22 +20,22 @@
         background-image: url(../../img/zigzag-desktop.svg);
         background-repeat: no-repeat;
         background-size: 100%;
-        padding: 94px 0 105px 225px;
+        padding: 94px 0 105px 179px;
         display: grid;
         grid-template-columns: 295px 527px;
-        column-gap: 57px;
+        column-gap: 54px;
         row-gap: 35px;
     }
   }
   .contacts__title {
     margin: 0;
-    @include font (18px,30px,700);
+    @include font (19px,30px,700);
     margin-left: 30px;
-    margin-bottom: 28px;
+    margin-bottom: 27px;
 
     @media (min-width:$tablet-width) {
         margin: 0;
-        @include font (43px,50px,700);
+        @include font (44px,50px,700);
         margin-bottom: 49px;
         padding-left: 50px;
     
@@ -47,19 +47,20 @@
         @include font (53px,57px,700);
         grid-column: 1;
         grid-row: 2/3;
+        padding-top: 45px;
     }
   }
   .contacts__title::after {
       @media (min-width: $tablet-width) {
           content: url(../../img/flag.svg);
           position: absolute;
-          top: 46px;
+          top: 64px;
           right: 53px;
       }
 
       @media (min-width:$desctop-width) {
-          top: 133px;
-          left: 113px;
+          top: 155px;
+          left: 65px;
       }
   }
   .contact__picture {
@@ -71,10 +72,10 @@
   }
   .contacts__img {
     width: 100%;
-    margin-bottom: 41px;
+    margin-bottom: 37px;
 
     @media (min-width:$tablet-width) {
-        margin-bottom: 55px;
+        margin-bottom: 51px;
     }
 
     @media (min-width:$desctop-width) {
@@ -86,17 +87,17 @@
     content: url(../../img/map-pin.svg);
   }
   .contacts__button {
-    padding: 16px 52px 16px 53px;
+    padding: 15px 54px 13px 51px;
     align-self: center;
 
     @media (min-width:$tablet-width) {
-        padding: 16px 36px 16px 36px;
+        padding: 16px 36px 12px 36px;
         margin-bottom: 57px;
        
     }
 
     @media (min-width:$desctop-width) {
-        padding: 16px 27px 16px 27px;
+        padding: 14px 27px 12px 27px;
         grid-column: 1;
         grid-row: 4/5;
         margin: 0;

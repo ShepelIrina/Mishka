@@ -6,8 +6,8 @@
         display: block;
         position: absolute;
         display: flex;
-        top: 108px;
-        left: 50px;
+        top: 109px;
+        left: 79px;
         @include font ( 15px,24px,700);
         
     }
@@ -21,8 +21,8 @@
     &:active {
         color: $color-black-opacity-light;
     }
-    
+
       @media (min-width: $desctop-width) {
-          padding-right: 65px;
+          padding-right: 69px;
       }
   }

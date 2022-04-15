@@ -7,6 +7,9 @@
     display: flex;
     justify-content: space-between;
   }
+  @media (min-width: $desctop-width) {
+    padding: 51px 75px 58px 77px;
+  }
 }
 .page-footer__logo {
   display: none;

@@ -2,11 +2,11 @@
   padding: 31px 30px 0 30px;
 
   @media (min-width:$tablet-width) {
-    padding: 40px 50px 20px 50px;
+    padding: 52px 50px 17px 50px;
   }
 
   @media (min-width:$desctop-width) {
-    padding: 54px 50px 74px 225px;
+    padding: 69px 0 74px 178px;
     position: relative;
   }
 }
@@ -20,8 +20,8 @@
     display: grid;
     grid-template-columns: 143px 2fr;
     position: absolute;
-    top: 115px;
-    left: 82px;
+    top: 133px;
+    left: 36px;
   }
 }
 .product__title {
@@ -36,7 +36,7 @@
   }
 
   @media (min-width:$desctop-width) {
-    @include font (53px,57px,700);
+    @include font (55px,57px,700);
     grid-column: 2;
     margin-bottom: 35px;
   }
@@ -54,7 +54,7 @@
     @include font (17px,17px,700);
     text-align: center;
     padding-top: 6px;
-    margin-right: 10px;
+    margin-right: 12px;
   }
 
   @media (min-width:$desctop-width) {

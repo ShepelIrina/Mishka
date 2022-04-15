@@ -2,28 +2,28 @@
   background-image: url(../../img/zigzag-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 31px 30px 0 30px;
+  padding: 37px 30px 0 32px;
 
   @media (min-width:$tablet-width) {
     background-image: url(../../img/zigzag-table.svg);
     background-repeat: no-repeat;
-    padding: 55px 50px 83px 50px;
+    padding: 73px 50px 70px 50px;
   }
 
   @media (min-width: $desctop-width) {
     background-image: url(../../img/zigzag-desktop.svg);
     background-repeat: no-repeat;
-    padding: 91px 0 90px 225px;
+    padding: 93px 0 73px 179px;
   }
 }
 .information__title {
   margin: 0;
-  @include font (25px,30px,700);
-  margin-bottom: 28px;
+  @include font (26px,30px,700);
+  margin-bottom: 27px;
   color: $color-basic-black;
 
   @media (min-width:$tablet-width) {
-    @include font (43px,50px,700);
+    @include font (44px,50px,700);
     margin-bottom: 41px;
   }
 

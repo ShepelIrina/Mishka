@@ -1,22 +1,27 @@
 .wishes {
-    margin-bottom: 17px;
+    margin-bottom: 16px;
 
     @media (min-width: $tablet-width) {
         padding: 50px 50px 0 50px;
-        margin-bottom: 53px;
+        margin-bottom: 56px;
         display: grid;
         grid-template-columns: 167px 1fr;
     }
 
     @media (min-width: $desctop-width) {
-        padding: 50px 225px 0 97px;
-        grid-template-columns: 128px 1fr;
-        margin-bottom: 49px;
+        padding: 50px 250px 0 140px;
+        grid-template-columns: 113px 1fr;
+        margin-bottom: 52px;
+    }
+}
+.form__title-wishes {
+    @media (min-width: $tablet-width) {
+        padding-top: 21px;
     }
 }
 .wishes__field {
     padding: 0;
-    margin-top: 4px;
+    margin-top: 3px;
     border: 2px solid $color-dark-grey;
     width: 100%;
 
@@ -40,7 +45,7 @@
     @include font (17px,18px);
     color: $color-black-opacity-light;
     width: 226px;
-    padding: 17px 0 0 17px;
+    padding: 16px 0 0 16px;
 
     @media (min-width: $tablet-width) {
         @include font (19px,18px);

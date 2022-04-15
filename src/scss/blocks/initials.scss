@@ -1,25 +1,25 @@
 .initials {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 
     @media (min-width: $tablet-width) {
         margin: 0;
-        padding: 50px 50px 25px 50px;
+        padding: 50px 50px 26px 50px;
         display: grid;
         grid-template-columns: 167px 1fr;
     }
 
     @media (min-width: $desctop-width) {
-        padding: 50px 225px 10px 97px;
-        grid-template-columns: 127px 1fr;
+        padding: 50px 248px 26px 140px;
+        grid-template-columns: 116px 1fr;
     }
 }
 .form__title-initials {
     @media (min-width: $tablet-width) {
-        padding-top: 14px;
+        padding-top: 19px;
     }
 }
 .initials__wrapper {
-    padding-top: 10px;
+    padding-top: 11px;
     display: flex;
     flex-direction: column;
 
@@ -38,19 +38,19 @@
     }
 }
 .initials__label {
-    @include font (17px,18px,700);
+    @include font (18px,18px,700);
 
     @media (min-width: $tablet-width) {
         @include font (19px,18px,700);
-        padding-top: 14px;
-        margin-right: 26px;
+        padding-top: 17px;
+        margin-right: 29px;
     }
 }
 .initials__input {
     border: none;
     border-bottom: 2px solid $color-basic-black;
-    padding: 17px 0 17px 0;
-    margin-bottom: 22px;
+    padding: 18px 0 15px 0;
+    margin-bottom: 24px;
 
     &:hover,
     &:focus {
@@ -60,12 +60,14 @@
      outline: none;
         border-bottom: 2px solid $color-basic-blue;
         color: $color-dark-grey;
-        @include font (19px,18px);
+        //@include font (19px,18px);
+        font-size: 19px;
+        line-height: 18px;
     }
 
     @media (min-width: $tablet-width) {
-        padding: 16px 0 18px 18px;
-        margin-bottom: 25px;
+        padding: 20px 0 15px 18px;
+        margin-bottom: 24px;
         width: 100%;
     }
    
